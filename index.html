@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Website</title>
+</head>
+<body>
+
+ 
+  <header>
+    <h1>Welcome to Our Accessible Site</h1>
+    <p>Ensuring usability for everyone.</p>
+  </header>
+
+ 
+  <main>
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>We focus on creating inclusive and accessible designs for everyone, regardless of ability.</p>
+    </section>
+
+  <!-- image tag with alt attribute -->
+    <section aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <img src="example.jpg" alt="A welcoming team at our office" />
+
+      <!--  form using fieldset and legend  -->
+      <form aria-labelledby="contact-heading">
+        <fieldset>
+          <legend>Contact Us</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" aria-required="true" placeholder="Enter your full name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" aria-required="true" placeholder="example@domain.com">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" aria-required="true" placeholder="Write your message here"></textarea>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!--  use of Footer tag with navigation links -->
+  <footer>
+    <h2>Quick Links</h2>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#about-heading">About Us</a></li>
+        <li><a href="#services-heading">Our Services</a></li>
+        <li><a href="#contact-heading">Contact Us</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 Accessible Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
